@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+
+<head>
+    <title>Accordian Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <link href="accordion.css" type="text/css" rel="stylesheet">
+</head>
+
+<body ng-controller="myController">
+
+    <div ng-repeat="d in data">
+        <div>
+            <h3 ng-click="accord.value = d.ht" ng-class="(accord.value== d.ht) ? 'active' : 'accord'  "> {{ d.ht}} </h3>
+        </div>
+        <div ng-show="accord.value == d.ht ">
+            <p> {{d.pt}} </p>
+        </div>
+    </div>
+</body>
+
+</html>

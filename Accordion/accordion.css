@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    font-family: Verdana;
+    width: 25%;
+}
+
+div {
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+}
+
+h3 {
+    cursor: pointer;
+    text-shadow: 2px 1px gray;
+    width: 100%;
+    text-align: left;
+    background-color: #d9e6ad;
+}
+
+.accord:after {
+    content: '\02795';
+    font-size: 13px;
+    float: left;
+    margin-right: 5px;
+}
+
+p {
+    text-indent: 50px;
+    padding-top: 10px;
+}
+
+.active:after {
+    content: "\2796";
+    font-size: 13px;
+    float: left;
+    margin-right: 5px;
+}
