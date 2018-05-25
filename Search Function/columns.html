@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+
+</head>
+
+<body >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="app.js"></script>
+<link type="text/css" rel="stylesheet" href="font/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="tableDesign.css" />
+<div ng-app="myApp">
+<div ng-controller="MyCtrl">
+<div class="searchContainer">
+ <input type="text" class="searchInput" ng-model="search" ng-change="searchInput(search)" placeholder="Report Search"><i class="fa fa-search fa-rotate-90" ></i>
+</div>
+<div class="container" style="display:table; width:100%">
+    <div class="row" style="padding-left: 10px;display:table-row;" ng-repeat="item in items" ng-switch on="$index % 3" ng-class-odd="'odd'" ng-class-even="'even'" >
+
+	<div  style="display:table-cell;" ng-switch-when="0" class="tdata">
+	<i class="fa fa-file-text" aria-hidden="true"></i>
+      &nbsp;<a ng-href="{{items[$index].Url}}" >{{items[$index].Description}}</a>
+      </div>
+     <div  style="display:table-cell;" ng-switch-when="0" class="tdata">
+	 <span ng-show="items[$index+1]"><i class="fa fa-file-text" aria-hidden="true"></i>
+        &nbsp;<a ng-href="{{items[$index+1].Url}}" >{{items[$index+1].Description}}</a>
+        </span>
+      </div>
+	  <div  style="display:table-cell;" ng-switch-when="0" class="tdatal">
+	     <span ng-show="items[$index+2]"><i class="fa fa-file-text" aria-hidden="true"></i>   
+         &nbsp;<a ng-href="{{items[$index+2].Url}}">{{items[$index+2].Description}}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div> 
+</div>
+</div>
+</body>
+
+</html>
+
+
+

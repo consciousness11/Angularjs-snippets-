@@ -1,0 +1,47 @@
+.odd {
+       background-color: #FFF;
+      }
+.even {
+        background-color: #f2f2fc;
+      }
+.tdata {
+	
+    color: #00496b;
+    border-right: 1px dashed #6df;
+    padding: 10px;
+   
+		}
+.tdatal {
+		color: #00496b;
+		padding: 10px 20px;
+		}
+	
+.searchContainer {
+    width: 360px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc9c9;
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.searchInput {
+    background-color: transparent !important;
+    margin: 0px;
+    padding: 0px !important;
+    width: 330px;
+    height: 25px;
+    font-size: 14px;
+    border-width: 0px !important;
+    vertical-align: middle;
+    outline: none;
+}
+
+.searchContainer input {
+    padding: 3px 6px !important;
+}
+.container a {
+font-size: 14px !important;
+color:#014c73;
+}
